@@ -140,6 +140,10 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7AC77691B49E6E500C21833 /* CoreMedia.framework */,
+				F7AC77671B49E6DF00C21833 /* IOSurface.framework */,
+				F7AC77651B49E6D700C21833 /* AVFoundation.framework */,
+				F7AC77631B49E6D100C21833 /* IOKit.framework */,
 				00E9FF3415AFD8E700D02D22 /* CoreLocation.framework */,
 				00C073570FF32F8B004801EA /* Accelerate.framework */,
 				00C073580FF32F8B004801EA /* AudioToolbox.framework */,
@@ -206,10 +210,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7AC77691B49E6E500C21833 /* CoreMedia.framework */,
-				F7AC77671B49E6DF00C21833 /* IOSurface.framework */,
-				F7AC77651B49E6D700C21833 /* AVFoundation.framework */,
-				F7AC77631B49E6D100C21833 /* IOKit.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
