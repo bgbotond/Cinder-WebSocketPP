@@ -37,8 +37,9 @@
 #include "winsock2.h"
 #endif
 
-#include "cinder/app/AppBasic.h"
+#include "cinder/app/App.h"
 #include "cinder/app/RendererGl.h"
+#include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 #include "cinder/params/Params.h"
 #include "cinder/Text.h"
@@ -53,12 +54,12 @@
  * communicate with clients.
  */
 
-class ServerApp : public ci::app::AppBasic 
+class ServerApp : public ci::app::App
 {
 public:
 	void						draw();
 	void						keyDown( ci::app::KeyEvent event );
-	void						prepareSettings( ci::app::AppBasic::Settings* settings );
+	void						prepareSettings( ci::app::App::Settings* settings );
 	void						setup();
 	void						update();
 private:
@@ -213,4 +214,4 @@ void ServerApp::write()
 	mServer.write( mMessage );
 }
 
-CINDER_APP_BASIC( ServerApp, RendererGl )
+CINDER_APP( ServerApp, RendererGl )
